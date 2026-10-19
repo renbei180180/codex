@@ -15,10 +15,10 @@ multiphysics coupling, thermal lubrication, and surface texturing. Microsoft Wor
 
 Ask Codex to use a skill by name, for example:
 
-- “Use paper-writing to outline an English paper on textured gear lubrication.”
-- “Use paper-revision to revise manuscripts/draft.docx and record substantive changes.”
-- “Use scientific-review to critique the contact and thermal coupling assumptions.”
-- “Use research-figures to plot my supplied data and export publication figures.”
+- “Use nature-writing to outline an English paper on textured gear lubrication.”
+- “Use nature-polishing to revise manuscripts/draft.docx and record substantive changes.”
+- “Use nature-reviewer to critique the contact and thermal coupling assumptions.”
+- “Use nature-figure to plot my supplied data and export publication figures.”
 
 Install the working tools with `python -m pip install -r requirements.txt`.
 Run `python scripts/check_environment.py` to check Word round-trip handling and
@@ -36,3 +36,15 @@ Skills guide available tools; they do not independently provide literature searc
 commercial solvers, image generation, journal access, or experimental results.
 Add target-journal instructions when available. Do not upload confidential or
 restricted material unless authorized to use it in this environment.
+
+## Imported Nature Skills
+
+All 22 callable upstream Nature Skills and their shared support package are
+installed under `.agents/skills/`. The previous four local skills have been
+replaced by the corresponding Nature Skills above. See
+[import provenance and replacement map](third_party/nature-skills/README.md).
+Use `nature-response` for reviewer replies, `nature-academic-search` for
+literature discovery, and `nature-ref-verifier` for reference verification.
+These optional workflows require their own available tools/access; they are not
+all runtime-configured by the import. The proposal-writing skill is invoked as
+`researchwrite`. Follow the exact target journal rather than assuming Nature rules.

@@ -23,3 +23,14 @@ revision markup. Report unreadable content and rendering limitations.
 Do not place credentials in this repository. No remote submission, email, or journal
 upload without explicit authorization. Use the existing isolated checkout; do not
 create a Git worktree unless explicitly requested.
+
+## Imported skills routing
+
+The Nature Skills suite in `.agents/skills/` replaces the original four skills:
+nature-writing for drafting, nature-polishing for revision, nature-reviewer for
+mock peer review, nature-response for reviewer responses, and nature-figure for
+figures. Keep the English/Word and mechanics-domain requirements above when
+using these skills. Journal-specific Nature rules apply only when the target
+journal or user request calls for them. Check optional tools and credentials
+only when required by a selected task; importing does not configure integrations.
+See third_party/nature-skills/README.md for provenance and the replacement map.
